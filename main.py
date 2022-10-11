@@ -13,6 +13,7 @@ def make_webdriver():
     # option.add_argument('--no-sandbox')
     # option.add_argument("--disable-dev-shm-usage")
     option.add_argument("--remote-debugging-port=9222")
+    
     if os.name == 'posix':
         web_driver_file = r"./chromedriver"
     else:
@@ -34,14 +35,6 @@ def main():
     time.sleep(5)
 
     driver.quit()
-
-
-
-
-
-
-
-
 
 
 
