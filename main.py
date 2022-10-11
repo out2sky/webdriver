@@ -29,7 +29,8 @@ def main():
 
     driver.get("https://www.baidu.com")
     driver.find_element('id','kw').send_keys('try')
-    driver.find_element('id',"kw").send_keys(Keys.ENTER)
+    # driver.find_element('id',"kw").send_keys(Keys.ENTER)
+    driver.find_element('id','su').click()
     time.sleep(5)
 
     driver.quit()
